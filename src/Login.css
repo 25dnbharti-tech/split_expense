@@ -1,0 +1,26 @@
+.logCard{
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    
+    
+}
+@media (max-width: 500px) {
+  .logCard {
+    text-align: center;
+    height: 100vh;
+    min-width: 100vw;
+    border: none;
+    border-radius: 0;
+
+  }
+  .headertlt{
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  .headerdes{
+    font-size: 1.1rem;
+  }
+}
+

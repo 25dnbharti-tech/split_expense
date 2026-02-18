@@ -1,12 +1,15 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import { Login } from "./Login";
-
 
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <Login />
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
