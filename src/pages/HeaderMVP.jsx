@@ -1,6 +1,6 @@
 const Header = ({ children, className = "" }) => (
   <header
-    className={`flex flex-col bg-app-primary w-full sticky top-0 z-50 ${className}`}
+    className={`flex flex-col bg-app-primary w-full  top-0 z-50 ${className}`}
   >
     {children}
   </header>
@@ -11,7 +11,9 @@ Header.Main = ({ children, className = "" }) => (
 );
 
 Header.Bottom = ({ children, className = "" }) => (
-  <div className={`w-full border-t border-white/10 ${className}`}>{children}</div>
+  <div className={`w-full border-t border-white/10 ${className}`}>
+    {children}
+  </div>
 );
 
 export default Header;

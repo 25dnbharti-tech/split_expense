@@ -20,6 +20,7 @@ html {
 
 @layer base {
   :root {
+    --text-black: 0 0% 0%;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -51,9 +52,12 @@ html {
     --primary-app-light: 44 100% 97.1%;
     --secondary-app: 0 0% 96.1%;
     --hover-button: 43 100% 80%;
+    --primary-light-red: 0 82.3% 77.8%;
+    --primary-light-grey: 0 0% 85.9%;
   }
 
   .dark {
+    --text-black: 0 0% 0%;
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
@@ -83,6 +87,8 @@ html {
     --primary-app: 43 100% 71%;
     -primary-app-light: 44 100% 97.1%;
     --secondary-app: 0 0% 96.1%;
+    --primary-light-red: 0 82.3% 77.8%;
+    --primary-light-grey: 0 0% 85.9%;
   }
 }
 

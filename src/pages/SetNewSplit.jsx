@@ -34,10 +34,10 @@ export function SetNewSplit() {
           </div>
         </Header.Main>
       </Header>
-      <div className=" flex flex-col items-center justify-center p-16 border-b border-grey border-dashed">
+      <div className=" flex flex-col items-center justify-center p-16 border-b border-grey border-dashed gap-8">
         <Tabs defaultValue="Expense" className="w-full  h-100vh">
-          <TabsList className="w-full flex bg-app-secondary ">
-            <TabsTrigger className="w-1/2" value="Expense">
+          <TabsList className="w-full flex bg-app-primary ">
+            <TabsTrigger className="w-1/2 " value="Expense">
               Expense
             </TabsTrigger>
             <TabsTrigger className="flex-grow" value="Credit">
@@ -45,24 +45,28 @@ export function SetNewSplit() {
             </TabsTrigger>
           </TabsList>
         </Tabs>
-        <div className="text-app-primary font-bold">Total Amount</div>
-        <div className="flex items-center justify-center p-4 gap-1 border-b border-app-primary">
-          <span className="text-6xl">₹</span>
-          <span
-            inputMode="numeric"
-            contentEditable="true"
-            onChange={(e) => setAmount(e.target.value)}
-            suppressContentEditableWarning
-            className="text-6xl outline-none min-w-[1ch]"
-            id="amount"
-          >
-            {amt}
-          </span>
+        <div className="flex-col">
+          <div className="text-app-primary font-bold  flex items-center justify-center ">
+            Total Amount
+          </div>
+          <div className="flex items-center justify-center p-2 gap-1 border-b border-app-primary">
+            <span className="text-6xl">₹</span>
+            <span
+              inputMode="numeric"
+              contentEditable="true"
+              onChange={(e) => setAmount(e.target.value)}
+              suppressContentEditableWarning
+              className="text-6xl outline-none min-w-[1ch]"
+              id="amount"
+            >
+              {amt}
+            </span>
+          </div>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center">
         <div className="flex items-center justify-center gap-2 p-4">
-          <span className="text-lg font-medium text-[#333333]">Paid By</span>
+          <span className="text-lg font-medium ">Paid By</span>
           <Combobox
             items={paidByOptions}
             value={paidBy}
