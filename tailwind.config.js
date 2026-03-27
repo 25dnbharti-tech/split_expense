@@ -59,6 +59,9 @@ export default {
         "app-primary-light": "hsl(var(--primary-app-light))",
         "app-secondary": "hsl(var(--secondary-app))",
         "hover-button" : "hsl(var(--hover-button))",
+        "app-text-black" : "hsl(var(--text-black))",
+        "app-primary-light-red" : "hsl(var(--primary-light-red))",
+        "app-primary-light-grey" : "hsl(var(--primary-light-grey))"
       },
     },
   },
